@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name = "xb";
+        var person = {
+            name: "axuebin",
+            getName: function () {
+                return this.name;
+            }
+        }
+        var getName = person.getName;
+        console.log(getName()); // xb
+    </script>
+</body>
+
+</html>
